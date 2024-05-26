@@ -1,0 +1,82 @@
+---
+import SkillFloat from "../components/SkillFloat.astro";
+import Layout from "../layouts/Layout.astro";
+
+import photo from "../../public/images/mi.png";
+import pdf from "../../public/documents/jeff.pdf";
+import Github from "../components/icons/Github.astro";
+import LinkedInd from "../components/icons/LinkedInd.astro";
+import Section from "../components/Section.astro";
+import InfoJeff from "../components/InfoJeff.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout
+  title="Portafolio de Jeffrey Josue Ramirez - programador y desarrollador web">
+  <Section class="px-4">
+    <Section class="py-44">
+      <header>
+        <p class="text-cyan-300">Hola soy</p>
+        <h1
+          class="text-white text-3xl md:text-4xl lg:text-5xl font-bold justify-center flex-row pb-3">
+          Jeffrey Josué Ramírez Rodríguez
+        </h1>
+        <h2>Desarrollador <span class="text-yellow-200"> FullStack</span></h2>
+        <div class="flex flex-row gap-x-2 py-3">
+          <a
+            class="rounded-md bg-cyan-600 p-1"
+            download="Jeffrey-Josue-Ramirez"
+            href={pdf}>DESCARGAR CV</a
+          >
+          <a class="rounded-md bg-cyan-600 p-1" href="#">Contactar</a>
+        </div>
+        <div class="containerphoto w-full">
+          <img src={photo.src} alt="My Photo" width="300px" class="photo" />
+        </div>
+
+        <nav class="flex flex-col gap-5">
+          <div class="flex">
+            <a
+              href="https://www.linkedin.com/in/jeffrey-josue-ramirez-rodriguez/"
+              target="__blank">
+              <LinkedInd class="text-yellow-400" />
+            </a>
+          </div>
+          <div class="flex">
+            <a href="https://github.com/Josueeeee" target="__blank">
+              <Github class="text-yellow-400" />
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <aside>
+        <SkillFloat />
+      </aside>
+    </Section>
+
+    <Section id="about-me">
+      <InfoJeff />
+    </Section>
+    <Section id="project">
+      <Projects />
+    </Section>
+  </Section>
+
+  <style>
+    .containerphoto {
+      background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 250, 250) 100%);
+      max-width: 200px;
+      max-height: 200px;
+
+      transform: translate(90%);
+      border-radius: 50%;
+      overflow: hidden;
+      /* border-radius: 50% ;  
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(250, 0, 125) 100%); */
+      object-fit: contain;
+      filter: drop-shadow(0px 0px 20px rgb(0, 255, 234));
+    }
+  </style>
+</Layout>

@@ -1,0 +1,36 @@
+---
+import ExperienceItems from "./ExperienceItems.astro";
+
+const dataExperience = [
+  {
+    title: "Administrador de TI, Asociación Hermandad de Honduras, ONDG",
+    description:
+      "+4 años de experiencias en gestionar y administrar los equipos informaticos de la Asociación, así como el desarrollo de estrátegias para eficientar el trabajo",
+    link: "#",
+    date: "Actualmente",
+  },
+  {
+    title: "Práctica Profesional en Microfinanciera Hermandad de Honduras",
+    description:
+      "Mantenimiento de computadoras, instalación de componentes y programas.",
+
+    date: "Septiembre 2018",
+  },
+  {
+    title: "Supermercado Econosuper",
+    description: "Atención Y serivicio al cliente",
+
+    date: "Junio 2019",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+  {
+    dataExperience.map(experience => (
+      <li class="mb-10 ms-4">
+        <ExperienceItems {...experience} />
+      </li>
+    ))
+  }
+</ol>

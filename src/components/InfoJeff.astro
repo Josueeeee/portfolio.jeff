@@ -1,0 +1,34 @@
+---
+import Experience from "./Experience.astro";
+import Person from "./icons/Person.astro";
+import Work from "./icons/Work.astro";
+import Tecnologia from "./icons/Tecnologia.astro";
+import Tecnologias from "./Tecnologias.astro";
+---
+
+<section class="mb-6" data-aos="fade-up">
+  <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <Person class="size-7" />
+    Sobre mi
+  </h2>
+
+  <p class="mb-4">
+    Soy un buen analista, tengo la habilidad de diseñar creativamente,
+    conocimientos técnicos en desarrollo informático. Me mantengo en control
+    ante cualquier situación. Con experiencia en tecnologías como HTML, CSS,
+    JavaScript, React, y Node.js. Me considero una persona resolutiva y
+    proactiva, con entusiasmo por aprender más.
+  </p>
+</section>
+<section class="mb-6">
+  <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <Work class="size-7" />Experiencia Laboral
+  </h2>
+  <Experience />
+</section>
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <Tecnologia class="size-7 text-white" />Tecnologias
+  </h2>
+  <Tecnologias class="" />
+</section>

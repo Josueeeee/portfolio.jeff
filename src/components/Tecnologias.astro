@@ -1,0 +1,46 @@
+---
+import html from "../../public/images/HTML.png";
+import css from "../../public/images/css.png";
+import js from "../../public/images/js.png";
+import react from "../../public/images/react.png";
+import node from "../../public/images/NodeJS.png";
+import boostrap from "../../public/images/Boostrap.png";
+import GitW from "../../public/images/gitW.png";
+---
+
+<div class="img-Container flex gap-4 ml-2 flex-wrap">
+  <img data-aos="zoom-in" data-aos-delay="100" src={html.src} alt="HTML logo" />
+  <img data-aos="zoom-in" data-aos-delay="200" src={css.src} alt="CSS logo" />
+  <img
+    data-aos="zoom-in"
+    data-aos-delay="300"
+    src={js.src}
+    alt="JavaScript logo"
+  />
+  <img
+    data-aos="zoom-in"
+    data-aos-delay="400"
+    src={react.src}
+    alt="React logo"
+  />
+  <img
+    data-aos="zoom-in"
+    data-aos-delay="500"
+    src={node.src}
+    alt="Node.js logo"
+  />
+  <img
+    data-aos="zoom-in"
+    data-aos-delay="600"
+    src={boostrap.src}
+    alt="Bootstrap logo"
+  />
+  <img data-aos="zoom-in" data-aos-delay="700" src={GitW.src} alt="Git logo" />
+</div>
+
+<style>
+  .img-Container img {
+    width: 50px;
+    height: 45px;
+  }
+</style>
